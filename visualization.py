@@ -5,6 +5,7 @@ from collections import Counter # Needed for Genre Analysis
 
 # --- IMPORTANT: Make sure this file_path is correct for your VS Code environment ---
 file_path = 'synthetic_movie_reviews_from_imdb.csv' # Or use '/full/path/to/synthetic_movie_reviews_from_imdb.csv'
+output_file_path = 'synthetic_movie_reviews_eda_processed.csv' # New file to save processed DataFrame
 
 try:
     df = pd.read_csv(file_path)
@@ -127,6 +128,10 @@ try:
     plt.ylabel('Number of Reviews')
     plt.tight_layout()
     plt.show()
+
+    # --- NEW: Save the DataFrame with all added EDA columns ---
+    df.to_csv(output_file_path, index=False)
+    print(f"\nDataFrame with EDA-derived columns saved to {output_file_path}")
 
 except FileNotFoundError:
     print(f"Error: The file '{file_path}' was not found. Please check the file path in your VS Code environment.")
