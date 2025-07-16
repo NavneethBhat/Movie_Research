@@ -126,3 +126,6 @@ How to Run the Code
     
 
 The script will print progress and results to the console, and generate the image files (.png) in the same directory.
+<img width="1400" height="800" alt="genre_sentiment_distribution (1)" src="https://github.com/user-attachments/assets/76c28df5-ebdf-4e0c-944d-ca62d28dbe10" />
+<img width="1800" height="1200" alt="logistic_regression_coefficients_plot (1)" src="https://github.com/user-attachments/assets/997ba1d9-4d50-43f5-aa9f-dc2dcd353eeb" />
+
